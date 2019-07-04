@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "FiasToPg": {
+      "commandName": "Project",
+      "commandLineArgs": "-d -c \"Host=localhost;Database=fias;Username=cuba;Password=cuba\" -p \"D:/fias/fias_delta_xml\""
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

@@ -1,0 +1,125 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="DataModels\OriginXSD\AS_ACTSTAT_2_250_08_04_01_01.xsd" />
+    <None Remove="DataModels\OriginXSD\AS_ADDROBJ_2_250_01_04_01_01.xsd" />
+    <None Remove="DataModels\OriginXSD\AS_CENTERST_2_250_10_04_01_01.xsd" />
+    <None Remove="DataModels\OriginXSD\AS_CURENTST_2_250_07_04_01_01.xsd" />
+    <None Remove="DataModels\OriginXSD\AS_DEL_ADDROBJ_2_250_15_04_01_01.xsd" />
+    <None Remove="DataModels\OriginXSD\AS_DEL_HOUSEINT_2_250_17_04_01_01.xsd" />
+    <None Remove="DataModels\OriginXSD\AS_DEL_HOUSE_2_250_16_04_01_01.xsd" />
+    <None Remove="DataModels\OriginXSD\AS_DEL_LANDMARK_2_250_18_04_01_01.xsd" />
+    <None Remove="DataModels\OriginXSD\AS_DEL_NORMDOC_2_250_19_04_01_01.xsd" />
+    <None Remove="DataModels\OriginXSD\AS_ESTSTAT_2_250_13_04_01_01.xsd" />
+    <None Remove="DataModels\OriginXSD\AS_FLATTYPE_2_250_23_04_01_01.xsd" />
+    <None Remove="DataModels\OriginXSD\AS_HOUSEINT_2_250_03_04_01_01.xsd" />
+    <None Remove="DataModels\OriginXSD\AS_HOUSE_2_250_02_04_01_01.xsd" />
+    <None Remove="DataModels\OriginXSD\AS_HSTSTAT_2_250_12_04_01_01.xsd" />
+    <None Remove="DataModels\OriginXSD\AS_INTVSTAT_2_250_11_04_01_01.xsd" />
+    <None Remove="DataModels\OriginXSD\AS_LANDMARK_2_250_04_04_01_01.xsd" />
+    <None Remove="DataModels\OriginXSD\AS_NDOCTYPE_2_250_20_04_01_01.xsd" />
+    <None Remove="DataModels\OriginXSD\AS_NORMDOC_2_250_05_04_01_01.xsd" />
+    <None Remove="DataModels\OriginXSD\AS_OPERSTAT_2_250_09_04_01_01.xsd" />
+    <None Remove="DataModels\OriginXSD\AS_ROOMTYPE_2_250_24_04_01_01.xsd" />
+    <None Remove="DataModels\OriginXSD\AS_ROOM_2_250_21_04_01_01.xsd" />
+    <None Remove="DataModels\OriginXSD\AS_SOCRBASE_2_250_06_04_01_01.xsd" />
+    <None Remove="DataModels\OriginXSD\AS_STEAD_2_250_22_04_01_01.xsd" />
+    <None Remove="DataModels\OriginXSD\AS_STRSTAT_2_250_14_04_01_01.xsd" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="DataModels\OriginXSD\AS_ACTSTAT_2_250_08_04_01_01.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataModels\OriginXSD\AS_ADDROBJ_2_250_01_04_01_01.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataModels\OriginXSD\AS_CENTERST_2_250_10_04_01_01.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataModels\OriginXSD\AS_CURENTST_2_250_07_04_01_01.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataModels\OriginXSD\AS_DEL_ADDROBJ_2_250_15_04_01_01.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataModels\OriginXSD\AS_DEL_HOUSEINT_2_250_17_04_01_01.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataModels\OriginXSD\AS_DEL_HOUSE_2_250_16_04_01_01.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataModels\OriginXSD\AS_DEL_LANDMARK_2_250_18_04_01_01.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataModels\OriginXSD\AS_DEL_NORMDOC_2_250_19_04_01_01.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataModels\OriginXSD\AS_ESTSTAT_2_250_13_04_01_01.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataModels\OriginXSD\AS_FLATTYPE_2_250_23_04_01_01.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataModels\OriginXSD\AS_HOUSEINT_2_250_03_04_01_01.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataModels\OriginXSD\AS_HOUSE_2_250_02_04_01_01.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataModels\OriginXSD\AS_HSTSTAT_2_250_12_04_01_01.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataModels\OriginXSD\AS_INTVSTAT_2_250_11_04_01_01.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataModels\OriginXSD\AS_LANDMARK_2_250_04_04_01_01.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataModels\OriginXSD\AS_NDOCTYPE_2_250_20_04_01_01.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataModels\OriginXSD\AS_NORMDOC_2_250_05_04_01_01.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataModels\OriginXSD\AS_OPERSTAT_2_250_09_04_01_01.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataModels\OriginXSD\AS_ROOMTYPE_2_250_24_04_01_01.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataModels\OriginXSD\AS_ROOM_2_250_21_04_01_01.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataModels\OriginXSD\AS_SOCRBASE_2_250_06_04_01_01.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataModels\OriginXSD\AS_STEAD_2_250_22_04_01_01.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataModels\OriginXSD\AS_STRSTAT_2_250_14_04_01_01.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.5.0" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.2.4" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DataModels\AsDataSet\" />
+  </ItemGroup>
+
+</Project>

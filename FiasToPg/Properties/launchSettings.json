@@ -2,7 +2,7 @@
   "profiles": {
     "FiasToPg": {
       "commandName": "Project",
-      "commandLineArgs": "-d -c \"Host=localhost;Database=fias;Username=cuba;Password=cuba\" -p \"D:/fias/fias_delta_xml\""
+      "commandLineArgs": "-c \"Host=localhost;Database=fias;Username=cuba;Password=cuba\" --dataPath \"D:/fias/fias_delta_xml\" --partCount 30000 --waitBetweenPart 30000"
     },
     "Docker": {
       "commandName": "Docker"

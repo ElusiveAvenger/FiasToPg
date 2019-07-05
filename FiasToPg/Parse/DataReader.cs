@@ -49,6 +49,8 @@ namespace FiasToPg.Parse
                 var totalWatch = Stopwatch.StartNew();
                 var totalCount = 0;
 
+                var partCount = 0;
+
                 while (reader.CanRead)
                 {
                     var result = reader.GetPart(_settings.TransactionSize);
@@ -66,8 +68,17 @@ namespace FiasToPg.Parse
                             _logger.LogDebug("begin save...");
                             var count = await context.SaveChangesAsync();
                             totalCount += count;
+                            partCount += count;
                             _logger.LogInformation($"save {count} (total: {totalCount})");
                         }
+                    }
+
+                    if (partCount >= _settings.PartCount && _settings.WaitBetweenPart > 0)
+                    {
+                        _logger.LogInformation($"timeout between parts ({_settings.WaitBetweenPart})");
+                        partCount = 0;
+                        await Task.Delay(_settings.WaitBetweenPart);
+                        _logger.LogDebug($"timeout complete");
                     }
                 }
 

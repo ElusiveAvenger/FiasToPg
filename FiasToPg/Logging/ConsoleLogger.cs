@@ -20,8 +20,16 @@ namespace FiasToPg.Logging
         {
             if (IsEnabled(logLevel))
             {
-                Console.WriteLine($"[{DateTime.Now:yyyy-MM-dd HH:mm:ss.fff}] [{logLevel}|{_loggerName}] {formatter.Invoke(state, exception)}");
+                Console.WriteLine(
+                    $"[{DateTime.Now:yyyy-MM-dd HH:mm:ss.fff}] [{logLevel}|{_loggerName}] {formatter.Invoke(state, exception)}{FormatException(exception)}");
             }
+        }
+
+        private static string FormatException(Exception e)
+        {
+            return e == null
+                ? string.Empty
+                : $"{Environment.NewLine}{e}";
         }
 
         public bool IsEnabled(LogLevel logLevel)

@@ -8,6 +8,8 @@ namespace FiasToPg.Connection
 {
     public sealed class FiasDbContext : DbContext
     {
+        private const string IdPropertyName = "__ID";
+
         private readonly CommonSettings _settings;
         private readonly IEnumerable<IModelDescription> _modelDescriptions;
 
@@ -36,15 +38,8 @@ namespace FiasToPg.Connection
                     .Ignore(nameof(DataRow.ItemArray))
                     .Ignore(nameof(DataRow.RowError));
 
-                if (modelDescription.PrimaryKey != null && modelDescription.PrimaryKey.Length > 0)
-                {
-                    entity.HasKey(modelDescription.PrimaryKey);
-
-                    foreach (var key in modelDescription.PrimaryKey)
-                    {
-                        entity.Property(key).ValueGeneratedNever();
-                    }
-                }
+                entity.Property<long>(IdPropertyName);
+                entity.HasKey(IdPropertyName);
             }
         }
 

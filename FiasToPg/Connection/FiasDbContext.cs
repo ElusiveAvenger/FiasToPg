@@ -23,7 +23,7 @@ namespace FiasToPg.Connection
         {
             base.OnConfiguring(optionsBuilder);
 
-            optionsBuilder.UseNpgsql(_settings.ConnectionString);
+            optionsBuilder.UseNpgsql(_settings.ConnectionString, builder => builder.EnableRetryOnFailure());
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
